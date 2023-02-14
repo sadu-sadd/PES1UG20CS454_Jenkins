@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh './sample_output > output.txt'
-                sh 'cat output.txt'
+                sh 'cats output.txt'
             }
         }
         stage('Deploy') {
